@@ -1,0 +1,21 @@
+# Example file for specifying run information to ngs.py
+# pipeline can be qc, alignment, removeDuplicate, recalibrate, callVariants ...
+pipeline: qc
+
+# assign software directory and parameter ...
+softwares:
+  fastx_toolkit:
+    dir: /opt/software/ngs/fastx_toolkit
+
+# cluster information such as queue, nodes ...
+cluster:
+  queue: all.q
+
+# common configure
+log:
+  dir: /tmp
+input:
+  dir: /tmp
+output:
+  dir: /tmp
+
